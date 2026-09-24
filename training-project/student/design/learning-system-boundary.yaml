@@ -1,0 +1,32 @@
+schema_version: "1.0"
+proposal_id: lab01-boundary-backend-ml
+status: approved
+personal_domain: backend development and machine learning
+intended_learning_outcome: Trace technical concepts in software systems to preserved source evidence,
+  evaluate prerequisite dependencies, and formulate grounded answers.
+non_goals:
+  - Autonomously mutating canonical knowledge records without explicit student approval.
+  - Implementing a production backend runtime, training foundation models from scratch, or making high-consequence
+    operational decisions.
+governance:
+  ai_role: Propose a bounded system description and expose uncertainty without accepting changes.
+  deterministic_role: Validate the candidate, bind the decision to its digest, and apply only approved
+    content.
+  human_role: Review meaning and explicitly approve or reject the proposal before application.
+usefulness_condition: The student can trace an accepted concept or answer directly to registered source
+  evidence with verified provenance.
+material_risk: The AI assistant proposes plausible but unsupported semantic relations or interpretations
+  that overstate what the source evidence proves.
+non_ai_baseline: Manually curate Markdown notes with exact keyword search and manual cross-referencing.
+uncertainty: Whether the initial closed relation vocabulary and deterministic heuristics will be sufficient
+  to capture subtle semantic nuances without frequent deferrals.
+required_evidence:
+  - Deterministic validation and test suite execution passing without schema or invariant violations.
+  - An explicit human decision record bound to the proposal SHA-256 digest following semantic review of
+    source grounding.
+accepted:
+  source_proposal: boundary-proposal.yaml
+  proposal_sha256: 19861f1fee7cad02d8d0f4115d50f709088a0147958412fb8111b45444a1d4c8
+  approved_by: Denys Dolbiiev
+  approved_at: "2026-09-24T17:28:00.095497+00:00"
+  applied_at: "2026-09-24T17:28:06.659164+00:00"
