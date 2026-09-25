@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "comparison_id": "lab02-live-comparison",
+  "comparison_kind": "same-model-variability",
+  "run_ids": [
+    "live-primary-01",
+    "live-primary-02"
+  ],
+  "request_sha256": "950c97a1147c439e4d0ce0ed7f2b29352add66b52feda2f7281aa74c3d47c27b",
+  "runs": [
+    {
+      "run_id": "live-primary-01",
+      "adapter": "agy",
+      "model_id": "gemini-3.8-flash-low",
+      "request_sha256": "950c97a1147c439e4d0ce0ed7f2b29352add66b52feda2f7281aa74c3d47c27b",
+      "raw_response_sha256": "cdb5e5720febc01ac869586060d70c128123c18395864dff6362fe9dd7536322",
+      "proposal_id": "lab02-structured-output-live-primary-01",
+      "proposal_sha256": "195aba02214fcb9542253dc652b2256580ca54ac6bf74887d4dc35ea4025d8ff"
+    },
+    {
+      "run_id": "live-primary-02",
+      "adapter": "agy",
+      "model_id": "gemini-3.8-flash-low",
+      "request_sha256": "950c97a1147c439e4d0ce0ed7f2b29352add66b52feda2f7281aa74c3d47c27b",
+      "raw_response_sha256": "1bdaf103d5dbaa1ac5bf74392b0e4f93370197477d0bc5ab530e83ffa99be32e",
+      "proposal_id": "lab02-structured-output-live-primary-02",
+      "proposal_sha256": "485e1107f3aa492a5804c0d913f3c53b5be6470cdd30cba81d065a5abbc34391"
+    }
+  ],
+  "structural_differences": {
+    "raw_bytes_differ": true,
+    "top_level_keys_differ": false,
+    "definition_differs": false,
+    "key_points_differs": true,
+    "source_support_quotes_differ": true
+  },
+  "generated_at": "2026-09-25T15:49:08.834576+00:00"
+}

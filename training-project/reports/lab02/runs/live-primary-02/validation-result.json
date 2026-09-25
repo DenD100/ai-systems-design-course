@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "validation_id": "lab02-structured-output-live-primary-02-validation",
+  "proposal_id": "lab02-structured-output-live-primary-02",
+  "proposal_sha256": "485e1107f3aa492a5804c0d913f3c53b5be6470cdd30cba81d065a5abbc34391",
+  "validator_version": "1.0",
+  "syntactic_gate": {
+    "status": "passed",
+    "errors": []
+  },
+  "invariant_gate": {
+    "status": "failed",
+    "errors": [
+      "Candidate key_points must contain exactly three non-empty strings.",
+      "source_support entry 1 quote is not exact source text.",
+      "source_support entry 3 quote is not exact source text."
+    ]
+  },
+  "errors": [
+    "Candidate key_points must contain exactly three non-empty strings.",
+    "source_support entry 1 quote is not exact source text.",
+    "source_support entry 3 quote is not exact source text."
+  ],
+  "valid": false,
+  "checked_at": "2026-09-25T15:47:48.940877+00:00"
+}

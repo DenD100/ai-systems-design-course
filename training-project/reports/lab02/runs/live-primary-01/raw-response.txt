@@ -1,0 +1,35 @@
+{
+  "concept_id": "structured-output",
+  "definition": "Model output intended to follow an explicit machine-readable organization, such as a JSON object with named fields.",
+  "key_points": [
+    "A prompt can request a format but cannot guarantee that the model will follow it, and valid JSON syntax does not establish semantic truth.",
+    "A model-backed operation needs three distinct gates: syntactic gate, deterministic invariant gate, and semantic acceptance gate.",
+    "Parseable syntax permits deterministic validation, but an authorized human reviewer must examine meaning and decide whether a candidate may proceed toward accepted state."
+  ],
+  "schema_version": "1.0",
+  "source_support": [
+    {
+      "claim": "Structured output is model output designed to follow an explicit machine-readable structure like JSON.",
+      "claim_kind": "definition",
+      "quote": "**Structured output** is model output intended to follow an explicit machine-readable organization, such as a JSON object with named fields."
+    },
+    {
+      "claim": "Syntactic conformance does not guarantee required fields or the truth of their values.",
+      "claim_kind": "syntax-vs-semantics",
+      "quote": "A provider's JSON mode may guarantee valid JSON syntax without guaranteeing the required fields or the truth of their values."
+    },
+    {
+      "claim": "Only an authorized human reviewer decides if a candidate proposal can proceed toward accepted state.",
+      "claim_kind": "authority-boundary",
+      "quote": "An authorized human reviewer examines meaning and decides whether the exact candidate may proceed toward accepted state."
+    }
+  ],
+  "tags": [
+    "domain/ai-engineering",
+    "topic/foundation-models",
+    "concept/structured-output"
+  ],
+  "title": "Structured Output",
+  "toolAction": "Finalizing structured output candidate",
+  "toolSummary": "Finalize candidate JSON"
+}

@@ -1,0 +1,39 @@
+{
+  "concept_id": "structured-output",
+  "definition": "Model output intended to follow an explicit machine-readable organization, such as a JSON object with named fields.",
+  "key_points": [
+    "Structured output is useful when downstream software must parse a response, when a task returns one of a fixed set of labels, or when a model proposes data for a controlled workflow.",
+    "Methods like explicit format instructions, examples, post-processing, retries, constrained sampling, and model adaptation improve structural conformance but do not establish whether resulting statements are supported by evidence.",
+    "A model-backed operation needs three distinct gates: a syntactic gate, a deterministic invariant gate, and a semantic acceptance gate.",
+    "Deterministic software can implement the syntactic and deterministic invariant gates, whereas the semantic acceptance gate requires judgment about meaning and evidence.",
+    "The model emits a candidate proposal rather than a canonical record, and only an authorized human reviewer examines meaning and evidence to decide if the exact candidate may proceed toward accepted state."
+  ],
+  "schema_version": "1.0",
+  "source_support": [
+    {
+      "claim": "Structured output is model output intended to follow an explicit machine-readable organization, such as a JSON object with named fields.",
+      "claim_kind": "definition",
+      "quote": "Structured output is model output intended to follow an explicit machine-readable organization, such as a JSON object with named fields."
+    },
+    {
+      "claim": "A schema or validator can prove syntax and field existence, but cannot prove semantic accuracy or truth of values.",
+      "claim_kind": "syntax-vs-semantics",
+      "quote": "A schema can prove that a `definition` field exists; it cannot prove that the definition accurately represents the source. A successful validator must therefore never be reported as proof of semantic correctness."
+    },
+    {
+      "claim": "The model emits a candidate proposal rather than canonical state, and only an authorized human reviewer decides whether the candidate proceeds to accepted state.",
+      "claim_kind": "authority-boundary",
+      "quote": "The model emits a candidate proposal, not a canonical record. Deterministic validation reads the candidate without approving it or changing canonical knowledge. An authorized human reviewer is the person accountable for examining the meaning and evidence and recording an explicit decision."
+    }
+  ],
+  "tags": [
+    "structured-output",
+    "syntax-vs-semantics",
+    "validation-gates",
+    "candidate-proposal",
+    "human-review"
+  ],
+  "title": "Structured Output",
+  "toolAction": "Submitting structured output concept",
+  "toolSummary": "Structured output concept submission"
+}
